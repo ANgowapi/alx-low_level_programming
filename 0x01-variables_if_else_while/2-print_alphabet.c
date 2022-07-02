@@ -9,12 +9,12 @@
 */
 int main(void)
 {
-int i = 30;
-while (i < 40)
+int i = 20;
+while (i < 120)
 {
 putchar(i);
 i++;
 }
-putchar(17);
+putchar(7);
 return (0);
 }
