@@ -10,13 +10,10 @@
 int main(void)
 {
 int i = 20
-
-srand(time(0));
-n = rand() - RAND_MAX / 2;
 while (i < 40)
 {
 putchar(i);
-i++
+i++;
 }
 return (0);
 }
