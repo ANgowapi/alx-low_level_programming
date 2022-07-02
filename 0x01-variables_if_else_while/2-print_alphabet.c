@@ -15,5 +15,6 @@ while (i < 40)
 putchar(i);
 i++;
 }
+ putchar(7);
 return (0);
 }
