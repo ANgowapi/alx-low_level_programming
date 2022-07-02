@@ -10,15 +10,15 @@
 
 int main(void)
 {
-int i, j;
+int a, p;
 
-i = 97;
-j = 65;
+a = 97;
+p = 65;
 
-while (i < 123)
+while (a < 123)
 {
-putchar(i);
-i++;
+putchar(a);
+a++;
 }
 while (j < 91)
 {
