@@ -20,10 +20,10 @@ while (a < 123)
 putchar(a);
 a++;
 }
-while (j < 91)
+while (p < 91)
 {
-putchar(j);
-j++;
+putchar(p);
+p++;
 }
 putchar(10);
 return (0);
