@@ -9,7 +9,7 @@
 */
 int main(void)
 {
-int i = 20
+int i = 20;
 while (i < 40)
 {
 putchar(i);
