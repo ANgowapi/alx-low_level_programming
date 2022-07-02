@@ -10,7 +10,7 @@
 int main(void)
 {
 int i = 20;
-while (i < 120)
+while (i < 123)
 {
 putchar(i);
 i++;
