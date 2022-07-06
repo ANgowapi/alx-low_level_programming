@@ -13,10 +13,7 @@ while (count < 10)
 {
 for (letter = 'a'; letter <= 'z'; letter++)
 _putchar(letter);
-_putchar('\n');
-
 }
-
-count++;
+_putchar('\n');
 
 }
