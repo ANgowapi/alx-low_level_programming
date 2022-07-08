@@ -4,6 +4,8 @@
 * _isupper - checks for uppercase character.
 * @c: c is the integer to be checked
 *
+* Description: a function that checks for uppercase character.
+*
 * Return: 1 if c is uppercase, otherwise 0
 */
 
