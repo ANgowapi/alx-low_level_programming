@@ -1,0 +1,14 @@
+#include "main.h"
+
+/**
+* _strcat - a function that links two strings.
+* @dest: first param
+* @src: second param
+*
+* Return: string
+*/
+
+char *_strcat(char *dest, char *src)
+{
+
+}
