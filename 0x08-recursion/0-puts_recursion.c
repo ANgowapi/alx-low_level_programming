@@ -4,7 +4,7 @@
 * @s: is the pointer to the string
 *
 * Return: 0
-* */
+*/
 void _puts_recursion(char *s)
 {
 if (*s)
