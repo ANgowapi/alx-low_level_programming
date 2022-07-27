@@ -1,6 +1,20 @@
 #include "main.h"
 
 /**
+* isdigits - check if a string is a number
+* @s: a pointer to the string to check
+*
+* Return: 1 if the string is a number,
+* otherwise 0
+*/
+int isdigits(char *s)
+{
+while ('0' <= *s && *s <= '9')
+++s;
+return (!*s);
+}
+
+/**
 * main - adds positive numbers
 * @argc: argument counter
 * @argv: array of pointer to strings
