@@ -1,39 +1,52 @@
 #include "main.h"
 
 /**
-* main - coins to make change for an amount of money
-* @argc: argument counter
-* @argv: array of pointer to strings
+* subtract_largest_coin - find min number of coins needed to make change
+* @cents: the amount of money to make change for in cents
 *
-* Return: 0 if no errors, else
+* Return: the minimum number of coins needed to make change
+*/
+int subtract_largest_coin(int cents)
+{
+if (cents - 25 > -1)
+return (cents - 25);
+
+if (cents - 10 > -1)
+return (cents - 10);
+
+if (cents - 5 > -1)
+return (cents - 5);
+
+if (cents - 2 > -1)
+return (cents - 2);
+
+if (cents - 1 > -1)
+return (cents - 1);
+
+return (0);
+}
+
+/**
+* main - print the minimum number of coins needed to make change
+* @argc: size of the argument vector
+* @argv: program name and arguments
+*
+* Return: 1 if given something other than a single argument,
+* otherwise 0
 */
 int main(int argc, char *argv[])
 {
-int a, n = 0, i, t;
-int c[5] = {25, 10, 5, 2, 1};
+int cents, coins;
 
 if (argc != 2)
 {
 puts("Error");
 return (1);
 }
-a = atoi(argv[1]);
-if (a <= 0)
-{
-puts("0");
-return (1);
-}
-else
-{
-for (i = 0; i < 5; i++)
-{
-t = a / c[i];
-a -= t * c[i];
-n += t;
-if (a == 0)
-break;
-}
-}
-printf("%d\n", n);
+for (cents = atoi(argv[1]), coins = 0; cents > 0; ++coins)
+cents = subtract_largest_coin(cents);
+
+printf("%d\n", coins);
+
 return (0);
 }
