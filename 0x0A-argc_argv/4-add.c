@@ -1,4 +1,42 @@
 #include "main.h"
+#include <limits.h>
+
+/**
+* print_number - print an integer
+* @n: the integer to print
+*
+* Return: void
+*/
+
+void print_number(int n)
+{
+if (n > -1)
+{
+if (n > 9)
+print_number(n / 10);
+_putchar('0' + n % 10);
+}
+else
+{
+_putchar('-');
+if (n < -9)
+print_number(n / -10);
+_putchar('0' - n % 10);
+}
+}
+
+/**
+* _puts - print a string, followed by a new line
+* @str: the string to print
+*
+* Return: void
+*/
+void _puts(char *str)
+{
+while (*str)
+_putchar(*str++);
+_putchar('\n');
+}
 
 /**
 * isdigits - check if a string is a number
@@ -15,31 +53,26 @@ return (!*s);
 }
 
 /**
-* main - adds positive numbers
-* @argc: argument counter
-* @argv: array of pointer to strings
+* main - print the sum of positive integers
+* @argc: size of the argument vector
+* @argv: program name and arguments
 *
-* Return: 0 if no errors, else
+* Return: 1 if called with arguments containing non-digit symbols,
+* otherwise 0
 */
 int main(int argc, char *argv[])
 {
-int a, b, sum = 0;
+int sum;
 
-if (argc < 1)
-printf("0\n");
-
-for (a = 1; a < argc; a++)
+for (sum = 0; --argc; sum += atoi(*argv))
 {
-for (b = 0; argv[a][b]; b++)
+if (!isdigits(*(++argv)))
 {
-if (!isdigit(argv[a][b]))
-{
-printf("Error\n");
+_puts("Error");
 return (1);
 }
 }
-sum += atoi(argv[a]);
-}
 printf("%d\n", sum);
+
 return (0);
 }
