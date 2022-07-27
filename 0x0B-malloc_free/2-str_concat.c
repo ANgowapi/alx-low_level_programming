@@ -35,7 +35,7 @@ for (j = 0; s2[j]; ++j)
 }
 }
 q = i + j + 1;
-s = malloc(q * sizeof(char));
+s = malloc(q *sizeof(char));
 if (s == NULL)
 return (NULL);
 
