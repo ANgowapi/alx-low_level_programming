@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
 * putchar - prints most numbers, but 2 and 4.
 *
