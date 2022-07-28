@@ -1,30 +1,23 @@
 #include "main.h"
 
 /**
-* more_numbers - prints 10 times the numbers, from 0 to 14
-* _putchar - returns the character written on the stdout as an unsigned char. 
+* more_numbers - prints more numbers.
 *
-* Return: no return
+* Return: _putchar or no return.
 */
 
 void more_numbers(void)
 {
-char a, b;
-int i = 0;
 
-while (i < 10)
+int a, b;
+for (a = 1; a <= 10; a++)
 {
-for (a = 0; a <= 14; a++)
+for (b = 0; b <= 14; b++)
 {
-b = a;
-if (a > 9)
-{
+if (b >= 10)
 _putchar('1');
-b = a % 10;
-}
-_putchar ('0' + a);
+_putchar(b % 10 + '0');
 }
 _putchar('\n');
-i++;
 }
 }
