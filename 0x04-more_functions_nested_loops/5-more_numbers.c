@@ -2,6 +2,7 @@
 
 /**
 * more_numbers - prints 10 times the numbers, from 0 to 14
+* _putchar - returns the character written on the stdout as an unsigned char. 
 *
 * Return: no return
 */
