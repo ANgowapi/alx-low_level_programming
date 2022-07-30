@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* array_range - create an array of integers containing a range of values
+* array_range - creates an array of integers containing a range of values
 * @min: the lower bound (included)
 * @max: the upper bound (included)
 *
@@ -16,9 +16,9 @@ unsigned int width;
 if (max < min)
 return (NULL);
 
-width = max - min;
+width = max - min + 1;
 
-range = malloc(sizeof(int) * (width + 1));
+range = malloc(sizeof(int) * width);
 if (!range)
 return (NULL);
 
