@@ -2,8 +2,8 @@
 
 /**
 * main - multiplies two positive numbers
-* @argc: n arguments
-* @argv: args
+* @argc: argument count
+* @argv: argument vector
 * Return: int
 */
 int main(int argc, char *argv[])
@@ -16,7 +16,7 @@ if (argc != 3)
 exit(98); }
 for (a = 1; a < argc; a++)
 {
-for (b = 0; argv[i][b] != '\0'; b++)
+for (b = 0; argv[a][b] != '\0'; b++)
 {
 if (argv[a][b] > 57 || argv[a][b] < 48)
 {  printf("Error\n");
