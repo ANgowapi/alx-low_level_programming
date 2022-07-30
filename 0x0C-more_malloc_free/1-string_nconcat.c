@@ -16,7 +16,7 @@ char *s;
 
 if (s1 == NULL)
 {
-x = 0;
+a = 0;
 }
 else
 {
